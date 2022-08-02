@@ -1,0 +1,15 @@
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "123@123.com",
+  "password": "123",
+  "name": "123"
+}
+
+### Get findUer by id
+GET http://localhost:3000/auth/1
+
+
+### Remove User by id
+DELETE http://localhost:3000/auth/3
