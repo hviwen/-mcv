@@ -2,14 +2,23 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "123@123.com",
-  "password": "123",
-  "name": "123"
+  "email": "zhangsan@163.com",
+  "password": "zhangSan",
+  "name": "zhangsan"
 }
 
 ### Get findUer by id
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/5
 
 
 ### Remove User by id
-DELETE http://localhost:3000/auth/3
+DELETE http://localhost:3000/auth/6
+
+
+### UpdateUser info by id
+PATCH http://localhost:3000/auth/4
+content-type: application/json
+
+{
+  "password": "qwer"
+}
